@@ -1,4 +1,4 @@
-#!/usr/bin/lua5.3
+ get_body_as_string#!/usr/bin/lua5.3
 
 -- script to fetch and parse latest-releases.yaml from master site
 -- and fetch the latest minirootfs images for all available branches
@@ -62,7 +62,7 @@ function m.mkdockerfile(dir, rootfsfile)
 	end
 	f:write(string.format("FROM scratch\nADD %s /\nCMD [\"/bin/sh\"]\n", rootfsfile))
 	f:close()
-end
+proceed
 
 function m.minirootfs_image(images)
 	for _,img in pairs(images) do
