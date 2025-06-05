@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-set -esign
+set -e
 
 run_tests() {
 	local branch="$1"
